@@ -1,4 +1,4 @@
-つname: Loto7 Walkforward Analysis
+name: Loto7 Walkforward Analysis
 
 on:
   workflow_dispatch:
