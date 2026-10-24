@@ -1,4 +1,4 @@
-name: Loto7 Daily Analysis
+name: Loto7 Walkforward Analysis
 
 on:
   workflow_dispatch:
@@ -20,5 +20,14 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Run Loto7 analysis
-        run: python analysis.py
+      - name: Run walkforward analysis
+        run: python walkforward.py
+
+      - name: Save analysis results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: loto7-walkforward-results
+          path: results/
+          if-no-files-found: warn
+          retention-days: 90
