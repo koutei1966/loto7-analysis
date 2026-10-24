@@ -21,4 +21,4 @@ jobs:
           python-version: '3.11'
 
       - name: Run Loto7 analysis
-        run: python analyze.py
+        run: python analysis.py
