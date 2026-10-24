@@ -1,4 +1,4 @@
-name: Loto7 Walkforward Analysis
+つname: Loto7 Walkforward Analysis
 
 on:
   workflow_dispatch:
@@ -60,7 +60,7 @@ jobs:
           python walkforward.py
           python walkforward_v3.py
           python walkforward_v4.py
-
+          python walkforward_v5.py
       - name: Save analysis results
         if: always()
         uses: actions/upload-artifact@v4
