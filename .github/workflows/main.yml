@@ -59,6 +59,7 @@ jobs:
         run: |
           python walkforward.py
           python walkforward_v3.py
+          python walkforward_v4.py
 
       - name: Save analysis results
         if: always()
