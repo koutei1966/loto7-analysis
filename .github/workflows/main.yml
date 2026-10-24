@@ -55,15 +55,15 @@ jobs:
           print(f"Validated {len(rounds)} draws, through round {rounds[-1]}")
           PY
 
-      - name: Run walkforward analysis
-        run: python walkforward.py
+      -
 
       - name: Save analysis results
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: loto7-walkforward-results
-          path: |
+          path name: Run walkforward analysis
+        run: python walkforward.py: |
             draws.csv
             results/
           if-no-files-found: warn
